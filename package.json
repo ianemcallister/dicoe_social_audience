@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ianemcallister/dicoe_social_audience/issues"
   },
-  "homepage": "https://github.com/ianemcallister/dicoe_social_audience#readme"
+  "homepage": "https://github.com/ianemcallister/dicoe_social_audience#readme",
+  "dependencies": {
+    "@google-cloud/bigquery": "^6.1.0"
+  }
 }
