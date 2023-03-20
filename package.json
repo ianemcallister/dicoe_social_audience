@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ianemcallister/dicoe_social_audience#readme",
   "dependencies": {
-    "@google-cloud/bigquery": "^6.1.0"
+    "@google-cloud/bigquery": "^6.1.0",
+    "fb": "^2.0.0"
   }
 }

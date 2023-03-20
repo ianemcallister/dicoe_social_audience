@@ -18,7 +18,7 @@ function loadAccts(tablesList) {
     tablesList.forEach(function(file) {
         //  NOTIFY PROGRESS
         console.log(file);
-        allFiles.push(JSON.parse(fs.readFileSync(path.join(__dirname, "/models/", file), 'utf8')));
+        allFiles.push(JSON.parse(fs.readFileSync(path.join(__dirname, "/secrets/", file), 'utf8')));
     });
 
     //  iterate over files
@@ -26,7 +26,7 @@ function loadAccts(tablesList) {
 
         //  iterate over records
         Object.keys(file).forEach(function(key) {
-            
+            allAccts.push({ account_id: key, access_token: file[key].access_token, platform: file[key].platform})
         });
 
     });
